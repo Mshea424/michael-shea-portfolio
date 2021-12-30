@@ -1,26 +1,90 @@
-/* The animation code */
-@keyframes header {
+/* Animations */
+@keyframes header-text {
     0% {opacity: 0;}
     25% {opacity: 1;}
     75% {opacity: 1;}
     100% {opacity: 0};
   }
 
+  @keyframes header-img {
+    0% {opacity: 0;}
+    100% {opacity: 1};
+  }
+
+  @keyframes header-minimize {
+    0% {
+        background-color: black;
+        height: 100vh;
+    }
+    100% {
+        background-color: transparent;
+        height: 400px;
+    };
+  }
+
+/* Dynamic variables */
+:root {
+    --header-text-size: 12vw;
+}
+
+@media screen and (min-width: 480px) {
+    :root {
+        --header-text-size: 50px;
+    }
+  }
+
 .header-wrapper {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     width: 100vw;
+    background-color: black;
+}
+
+.wrapper-minimized {
+    height: 400px;
+    background-color: transparent;
+    animation-name: header-minimize;
+    animation-duration: .8s;
+}
+
+.header-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-img {
+    opacity: 0;
+    height: auto;
+    width: 30vw;
+    max-width: 200px;
+    border: 2px solid white;
+    border-radius: 15vw;
+}
+
+.img-active {
+    opacity: unset;
+    animation-name: header-img;
+    animation-duration: .5s;
+}
+
+.header-text-wrapper {
+ height: 100px;
+ margin-top: 50px;
 }
 
 .header-text {
     display: none;
-    font-size: 40px;  
+    font-size: var(--header-text-size);
+    text-align: center;  
+    color: white;
 }
 
 .text-active {
     display: block;
-    animation-name: header;
+    animation-name: header-text;
     animation-duration: 2.5s;
 }
