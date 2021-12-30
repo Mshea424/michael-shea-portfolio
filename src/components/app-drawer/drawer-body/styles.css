@@ -1,0 +1,10 @@
+.drawer-body {
+    position: fixed;
+    display: block;
+    top:-70px;
+    left:-65px;
+    height: 130px;
+    width: 130px;
+    border-radius: 60px;
+    background-color: rgba(0,0,0,0.25);
+}
