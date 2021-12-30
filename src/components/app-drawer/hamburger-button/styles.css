@@ -16,6 +16,25 @@
         transform: rotate(-225deg);};
   }
 
+  @keyframes shadow-expand {
+    0% {
+        top:-70px;
+        left:-65px;
+        height: 130px;
+        width: 130px;
+        border-radius: 60px;
+        background-color: rgba(0,0,0,0.25);
+    }
+    100% {
+        top: 0;
+        left: 0;
+        height: var(--app-drawer-body-height);
+        width: var(--app-drawer-body-width);
+        border-radius: 0;
+        background-color: rgba(0,0,0,0);
+        };
+  }
+
 
 .hamburger-button {
     position: fixed;
@@ -27,6 +46,25 @@
     left: 12px;
     cursor: pointer;
 }
+
+.button-shadow {
+    position: fixed;
+    display: block;
+    top:-70px;
+    left:-65px;
+    height: 130px;
+    width: 130px;
+    border-radius: 60px;
+    background-color: rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+.shadow-expand {
+    background-color: transparent;
+    animation: shadow-expand;
+    animation-duration: .75s;
+}
+    
 
 .hamburger-line {
     display: block;
