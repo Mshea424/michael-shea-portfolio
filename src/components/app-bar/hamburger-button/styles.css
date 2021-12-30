@@ -1,0 +1,69 @@
+@keyframes line-active1 {
+    0% {
+        top: 0;
+        transform: rotate(0deg)
+    }
+    100% {top: 9px;
+        transform: rotate(45deg);};
+  }
+
+  @keyframes line-active3 {
+    0% {
+        top: 15px;
+        transform: rotate(0deg)
+    }
+    100% {top: 9px;
+        transform: rotate(-225deg);};
+  }
+
+
+.hamburger-button {
+    position: fixed;
+    display: block;
+    height: 21px;
+    width: 27px;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.hamburger-line {
+    display: block;
+    height: 3px;
+    width: 27px;
+    background-color: white;
+    border-radius: 1.5px;
+}
+
+#line1 {
+    position: absolute;
+}
+
+#line1.active {
+    top: 9px;
+    transform: rotate(45deg);
+    animation: line-active1;
+    animation-duration: .5s;
+}
+
+#line2 {
+    position: absolute;
+    top: 9px;
+}
+
+#line2.active {
+    opacity: 0;
+}
+
+#line3 {
+    position: absolute;
+    top: 18px;
+}
+
+#line3.active {
+    position: absolute;
+    top: 9px;
+    transform: rotate(-45deg);
+    animation: line-active3;
+    animation-duration: .5s;
+}
