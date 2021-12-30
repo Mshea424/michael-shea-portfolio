@@ -13,17 +13,28 @@
 
   @keyframes header-minimize {
     0% {
-        background-color: black;
         height: 100vh;
-        margin: 0 auto;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background-color: black;
         border-radius: 0;
     }
     100% {
         background-color: transparent;
+        height: 150px;
+        width: 150px;
+        border-radius: 150px;
+        top: 50px;
+        left: calc(50vw - 75px);
+    };
+  }
+  @keyframes text-minimize {
+    0% {
         height: 200px;
-        width: 200px;
-        border-radius: 200px;
-        margin: 50px auto;
+    }
+    100% {
+       height: 0;
     };
   }
 
@@ -39,6 +50,9 @@
   }
 
 .header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -49,10 +63,13 @@
 }
 
 .wrapper-minimized {
-    height: 200px;
+    height: 150px;
+    width: 150px;
+    top: 50px;
+    left: calc(50vw - 75px);
     background-color: transparent;
     animation-name: header-minimize;
-    animation-duration: .8s;
+    animation-duration: 1s;
     margin: 50px auto;
 }
 
@@ -66,8 +83,7 @@
     opacity: 0;
     height: auto;
     width: 30vw;
-    max-width: 200px;
-    margin-top: 50px;
+    max-width: 150px;
     border: 2px solid white;
     border-radius: 15vw;
 }
@@ -79,8 +95,20 @@
 }
 
 .header-text-wrapper {
- height: 100px;
- margin-top: 50px;
+ height: 200px;
+ margin-top: 25px;
+}
+
+.text-frame {
+    display: block;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.text-minimize {
+    height: 0;
+    animation-name: text-minimize;
+    animation-duration: .5s;
 }
 
 .header-text {

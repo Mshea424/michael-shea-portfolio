@@ -10,8 +10,8 @@ export default function Header() {
         src="mshea_logo.png" alt="logo" 
         className={`header-img ${textCount > 1 ? "img-active" : ""}`}
       />
-      <div className="header-text-wrapper">
-        <div
+      <div className={`text-frame ${textCount > 3 ? "text-minimize" : ""}`}>
+      <div
           className={`header-text ${textCount === 1 ? "text-active" : ""}`}
           onAnimationEnd={() => {
             setTextCount(textCount + 1);
@@ -35,7 +35,7 @@ export default function Header() {
         >
           Welcome to my Portfolio
         </div>
-      </div>
+      </div> 
     </div>
   );
 }
