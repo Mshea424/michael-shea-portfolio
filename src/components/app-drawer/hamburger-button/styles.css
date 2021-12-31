@@ -1,108 +1,210 @@
-@keyframes line-active1 {
-    0% {
-        top: 0;
-        transform: rotate(0deg)
-    }
-    100% {top: 9px;
-        transform: rotate(45deg);};
-  }
-
-  @keyframes line-active3 {
-    0% {
-        top: 15px;
-        transform: rotate(0deg)
-    }
-    100% {top: 9px;
-        transform: rotate(-225deg);};
-  }
-
-  @keyframes shadow-expand {
-    0% {
-        top:-70px;
-        left:-65px;
-        height: 130px;
-        width: 130px;
-        border-radius: 60px;
-        background-color: rgba(0,0,0,0.25);
-    }
-    100% {
-        top: 0;
-        left: 0;
-        height: var(--app-drawer-body-height);
-        width: var(--app-drawer-body-width);
-        border-radius: 0;
-        background-color: rgba(0,0,0,0);
-        };
-  }
-
+/* BUTTON BODY */
 
 .hamburger-button {
-    position: fixed;
-    z-index: 2;
-    display: block;
-    height: 21px;
-    width: 27px;
-    top: 12px;
-    left: 12px;
-    cursor: pointer;
+  position: fixed;
+  z-index: 2;
+  display: block;
+  height: 21px;
+  width: 27px;
+  top: 12px;
+  left: 12px;
+  cursor: pointer;
 }
 
+/* BUTTON SHADOW */
+
 .button-shadow {
-    position: fixed;
-    display: block;
-    top:-70px;
-    left:-65px;
+  position: fixed;
+  display: block;
+  top: -70px;
+  left: -65px;
+  height: 130px;
+  width: 130px;
+  border-radius: 60px;
+  background-color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+@keyframes shadow-activate {
+  0% {
+    top: -70px;
+    left: -65px;
     height: 130px;
     width: 130px;
     border-radius: 60px;
-    background-color: rgba(0,0,0,0.25);
-    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    top: 0;
+    left: 0;
+    height: var(--app-drawer-body-height);
+    width: var(--app-drawer-body-width);
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+  @keyframes shadow-deactivate {
+    0% {
+      height: 0;
+      width: 0;
+      border-radius: 60px;
+      background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+        height: 130px;
+        width: 130px;
+        border-radius: 60px;
+        background-color: rgba(0, 0, 0, 0.25);
+    }
 }
 
-.shadow-expand {
+.button-shadow.active {
     background-color: transparent;
-    animation: shadow-expand;
-    animation-duration: .75s;
 }
-    
+
+.shadow-activate {
+  animation: shadow-activate;
+  animation-duration: 0.75s;
+}
+
+.shadow-deactivate {
+    animation: shadow-deactivate;
+    animation-duration: 0.75s;
+  }
+
+/* HAMBURGER LINES */
 
 .hamburger-line {
-    display: block;
-    height: 3px;
-    width: 27px;
-    background-color: white;
-    border-radius: 1.5px;
+  display: block;
+  height: 3px;
+  width: 27px;
+  background-color: white;
+  border-radius: 1.5px;
 }
 
+/* HAMBURGER LINE TOP */
+
 #line1 {
-    position: absolute;
+  position: absolute;
 }
 
 #line1.active {
-    top: 9px;
-    transform: rotate(45deg);
-    animation: line-active1;
-    animation-duration: .5s;
+  top: 9px;
+  transform: rotate(45deg);
 }
 
-#line2 {
-    position: absolute;
+@keyframes line-activate1 {
+  0% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  100% {
     top: 9px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes line-deactivate1 {
+  0% {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+.line-activate1 {
+  animation: line-activate1;
+  animation-duration: 0.5s;
+}
+
+.line-deactivate1 {
+    animation: line-deactivate1;
+    animation-duration: 0.5s;
+  }
+
+/* HAMBURGER LINE MIDDLE */
+
+#line2 {
+  position: absolute;
+  top: 9px;
 }
 
 #line2.active {
-    opacity: 0;
+    transform: translateX(-150%)
 }
 
+@keyframes line-activate2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-150%);
+    }
+  }
+  
+  @keyframes line-deactivate2 {
+    0% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+  
+  .line-activate2 {
+    animation: line-activate2;
+    animation-duration: 0.5s;
+  }
+  
+  .line-deactivate2 {
+      animation: line-deactivate2;
+      animation-duration: 0.5s;
+    }
+
+/* HAMBURGER LINE BOTTOM */
+
 #line3 {
-    position: absolute;
-    top: 18px;
+  position: absolute;
+  top: 18px;
 }
 
 #line3.active {
-    position: absolute;
-    top: 9px;
-    transform: rotate(-45deg);
-    animation: line-active3;
-    animation-duration: .5s;
+  position: absolute;
+  top: 9px;
+  transform: rotate(-45deg);
 }
+
+@keyframes line-activate3 {
+  0% {
+    top: 15px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 9px;
+    transform: rotate(-225deg);
+  }
+}
+
+@keyframes line-deactivate3 {
+    0% {
+        top: 9px;
+        transform: rotate(-45deg);
+      }
+    100% {
+      top: 15px;
+      transform: rotate(0deg);
+    }
+  }
+
+.line-activate3 {
+  animation: line-activate3;
+  animation-duration: 0.5s;
+}
+
+.line-deactivate3 {
+    animation: line-deactivate3;
+    animation-duration: 0.5s;
+  }
