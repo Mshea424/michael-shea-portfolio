@@ -1,5 +1,5 @@
 :root {
-    --grid-item-width: calc((var(--grid-width) / 3) - 20px);
+    --grid-item-width: calc((var(--grid-width) / 2) - 20px);
     --grid-item-height: var(--grid-item-width);
 }
 
@@ -11,4 +11,31 @@
     width: var(--grid-item-width);
     background-color: red;
     margin: 10px;
+}
+
+/* MEDIA QUERIES (BOOTSRAP REFERNCE BREAKPOINTS) */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    :root {
+        --grid-item-width: calc((var(--grid-width) / 3) - 20px);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    :root {
+        --grid-item-width: calc((var(--grid-width) / 4) - 20px);
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    
 }
