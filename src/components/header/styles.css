@@ -43,12 +43,6 @@
     --header-text-size: 12vw;
 }
 
-@media screen and (min-width: 480px) {
-    :root {
-        --header-text-size: 50px;
-    }
-  }
-
 .header-wrapper {
     position: fixed;
     z-index: 3;
@@ -124,3 +118,24 @@
     animation-name: header-text;
     animation-duration: 2.5s;
 }
+
+/* MEDIA QUERIES (BOOTSRAP REFERNCE BREAKPOINTS) */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    :root {
+        --header-text-size: 50px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
