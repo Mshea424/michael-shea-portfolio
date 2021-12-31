@@ -1,0 +1,9 @@
+:root {
+    --grid-width: calc(100vw - 100px);
+}
+
+.grid {
+    width: var(--grid-width);
+    background-color: grey;
+    margin: 0 auto;
+}

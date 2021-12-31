@@ -1,0 +1,8 @@
+.section {
+    display: block;
+    width: 100vw;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 20px 0;
+    padding: 20px 0;
+}
