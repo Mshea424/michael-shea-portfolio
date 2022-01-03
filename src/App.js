@@ -3,12 +3,17 @@ import Header from './components/header/index'
 import AppDrawer from './components/app-drawer/index'
 import ResponsiveGrid from './components/responsive-grid/index';
 
+import logos from './logos/logos'
+
 function App() {
   return (
     <div className="App">
       <AppDrawer/>
       <Header/>
-      <ResponsiveGrid/>
+      <ResponsiveGrid 
+        itemsType={logos.itemsType}
+        logoUrls={logos.logoUrls}
+      />
     </div>
   );
 }

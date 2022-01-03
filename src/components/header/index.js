@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div className={`header-wrapper ${textCount === 4 ? "wrapper-minimized" : ""}`}>
         <img 
-        src="mshea_logo.png" alt="logo" 
+        src="images/mshea_logo.png" alt="logo" 
         className={`header-img ${textCount > 1 ? "img-active" : ""}`}
       />
       <div className={`text-frame ${textCount > 3 ? "text-minimize" : ""}`}>

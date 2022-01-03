@@ -13,6 +13,11 @@
     margin: 10px;
 }
 
+.logo-img {
+    height: auto;
+    max-width: var(--grid-item-width);
+}
+
 /* MEDIA QUERIES (BOOTSRAP REFERNCE BREAKPOINTS) */
 
 /* Small devices (landscape phones, 576px and up) */
