@@ -1,4 +1,5 @@
-// import { useContext } from 'react';
+import { useContext } from 'react';
+import {LogosContext} from '../../App'
 import "./styles.css";
 
 import GridLogo from './grid-logo/index'
@@ -8,10 +9,15 @@ import GridLogo from './grid-logo/index'
 // Responsive Grid must be initialized with props
 // Expected Props structure is: { itemsType: 'logo | project', logoUrls:['./images/css.png', ...] | [{projectDesc: '', projectImgUrl: '', projectNavUrl: ''}, ...]}
 export default function ResponsiveGrid(props) {
+
+    const logos = useContext(LogosContext);
+
+
     if (props.itemsType === 'logo') {
+        console.log(logos)
         return (
             <div className="grid">
-                {props.logoUrls.map((imgUrl)=> {
+                {logos.map((imgUrl)=> {
                     return (<GridLogo imgUrl={imgUrl}/>)
                 })}
                 
