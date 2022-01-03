@@ -1,4 +1,4 @@
-import React from 'react'
+// import { useContext } from 'react'
 import "./styles.css";
 
 export default function HamburgerButton(props) {

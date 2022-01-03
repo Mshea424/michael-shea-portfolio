@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import HamburgerButton from './hamburger-button/index';
 import DrawerBody from './drawer-body/index';
 import "./styles.css";
