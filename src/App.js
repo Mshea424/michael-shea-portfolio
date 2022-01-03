@@ -11,7 +11,12 @@ function App() {
     <div className="App">
       <AppDrawer/>
       <Header/>
-      <div className="section"><Skills/></div>
+      <div className="main">
+        <div className="section">
+          <Skills/>
+        </div>
+      </div>
+      
     </div>
   );
 }

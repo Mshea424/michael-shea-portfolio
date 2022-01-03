@@ -1,31 +1,25 @@
 :root {
-    --grid-width: calc(100vw - 100px);
-    --grid-logo-width: calc((var(--grid-width) / 2) - 20px);
-    --grid-logo-height: var(--grid-logo-width);
+    --grid-wrapper-width: calc(100vw - 100px);
+    --tile-md-width: calc((var(--grid-wrapper-width) / 2) - 20px);
+    --tile-md-height: var(--tile-md-width);
 }
 
 
 
-.grid {
-    width: var(--grid-width);
-    /* background-color: grey; */
+.grid-wrapper {
+    width: var(--grid-wrapper-width);
+    background-color: grey;
     margin: 0 auto;
 }
 
-
-.logo-wrapper {
+.grid-tile-md {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: var(--grid-logo-height);
-    width: var(--grid-logo-width);
-    /* background-color: red; */
+    height: var(--tile-md-height);
+    width: var(--tile-md-width);
+    background-color: red;
     margin: 10px;
-}
-
-.logo-img {
-    height: auto;
-    max-width: calc(var(--grid-logo-width) * .6);
 }
 
 /* MEDIA QUERIES (BOOTSRAP REFERNCE BREAKPOINTS) */
@@ -36,19 +30,23 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     :root {
-        --grid-logo-width: calc((var(--grid-width) / 3) - 20px);
+        --tile-md-width: calc((var(--grid-wrapper-width) / 3) - 20px);
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     :root {
-        --grid-logo-width: calc((var(--grid-width) / 4) - 20px);
+        --tile-md-width: calc((var(--grid-wrapper-width) / 4) - 20px);
     }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    :root {
+        --grid-wrapper-width: 1000px;
+    }
+}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {}

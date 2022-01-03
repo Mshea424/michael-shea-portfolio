@@ -4,11 +4,11 @@ import logoUrls from '../../logoUrls'
 
 export default function Skills() {
     return (
-        <div className="grid">
+        <div className="grid-wrapper">
             {logoUrls.map((url)=> {
                 return(
                     <div
-                    className='logo-wrapper'
+                    className='grid-tile-md'
                     >
                         <img 
                             className='logo-img'

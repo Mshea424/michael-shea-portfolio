@@ -1,8 +1,14 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: lightseagreen;
-  /* test for scroll */
-  height: 40000px;
+}
+
+.main {
+  margin-top: 175px;
+  height: calc(100vh - 175px);
+  position: fixed;
+  overflow: auto;
+  /* background-color: blue; */
 }
 
 
