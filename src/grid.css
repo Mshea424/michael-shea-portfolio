@@ -1,7 +1,17 @@
 :root {
+    --grid-width: calc(100vw - 100px);
     --grid-logo-width: calc((var(--grid-width) / 2) - 20px);
     --grid-logo-height: var(--grid-logo-width);
 }
+
+
+
+.grid {
+    width: var(--grid-width);
+    /* background-color: grey; */
+    margin: 0 auto;
+}
+
 
 .logo-wrapper {
     display: inline-flex;

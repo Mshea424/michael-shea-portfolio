@@ -1,26 +1,17 @@
-import { createContext } from 'react';
-
 import './App.css';
+import './section.css';
+
 import Header from './components/header/index'
 import AppDrawer from './components/app-drawer/index'
-import ResponsiveGrid from './components/responsive-grid/index';
 
-import logoUrls from './logoUrls'
-// import projects from './projects'
-
-export const LogosContext = createContext();
-// export const ProjectsContext = createContext(projects);
+import Skills from './components/skills/index'
 
 function App() {
   return (
     <div className="App">
       <AppDrawer/>
       <Header/>
-      <LogosContext.Provider value={logoUrls}>
-        <ResponsiveGrid 
-        itemsType={'logo'}
-        />
-      </LogosContext.Provider>
+      <div className="section"><Skills/></div>
     </div>
   );
 }
