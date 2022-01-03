@@ -22,11 +22,11 @@
     }
     100% {
         background-color: transparent;
-        height: 150px;
-        width: 150px;
-        border-radius: 150px;
-        top: 50px;
-        left: calc(50vw - 75px);
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        top: 25px;
+        left: calc(50vw - 50px);
     };
   }
   @keyframes text-minimize {
@@ -58,14 +58,14 @@
 }
 
 .wrapper-minimized {
-    height: 150px;
-    width: 150px;
-    top: 50px;
-    left: calc(50vw - 75px);
+    height: 100px;
+    width: 100px;
+    top: 25px;
+    left: calc(50vw - 50px);
     background-color: transparent;
     animation-name: header-minimize;
     animation-duration: 1s;
-    margin: 50px auto;
+    margin: 25px auto;
 }
 
 .header-block {
@@ -78,7 +78,7 @@
     opacity: 0;
     height: auto;
     width: 30vw;
-    max-width: 150px;
+    max-width: 100px;
     border: 2px solid white;
     border-radius: 15vw;
 }
