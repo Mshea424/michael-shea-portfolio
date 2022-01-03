@@ -1,16 +1,19 @@
 import { useContext } from 'react';
 import {LogosContext} from '../../App'
+// import {ProjectsContext} from '../../App'
 import "./styles.css";
 
 import GridLogo from './grid-logo/index'
 // import GridItemLg from './grid-item-lg/index'
 
 
-// Responsive Grid must be initialized with props
-// Expected Props structure is: { itemsType: 'logo | project', logoUrls:['./images/css.png', ...] | [{projectDesc: '', projectImgUrl: '', projectNavUrl: ''}, ...]}
+// Responsive Grid must be initialized with 'itemsType' prop of either 'logo' or 'project'
+// the value of itemsType will specify whether to render a grid of logos, or a grid of Project cards
+
 export default function ResponsiveGrid(props) {
 
     const logos = useContext(LogosContext);
+    // const projects = useContext(ProjectsContext);
 
 
     if (props.itemsType === 'logo') {
@@ -27,11 +30,7 @@ export default function ResponsiveGrid(props) {
     else if (props.itemsType === 'project') { 
         return (
             <div className="grid">
-                {/* <GridItemLg/>
-                <GridItemLg/>
-                <GridItemLg/>
-                <GridItemLg/>
-                <GridItemLg/>               */}
+             {/* GridProject Components */}
             </div>
         )
     }

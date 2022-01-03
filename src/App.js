@@ -5,7 +5,7 @@ import Header from './components/header/index'
 import AppDrawer from './components/app-drawer/index'
 import ResponsiveGrid from './components/responsive-grid/index';
 
-import logoUrls from './logos'
+import logoUrls from './logoUrls'
 // import projects from './projects'
 
 export const LogosContext = createContext();
@@ -19,7 +19,6 @@ function App() {
       <LogosContext.Provider value={logoUrls}>
         <ResponsiveGrid 
         itemsType={'logo'}
-        // logoUrls={logos.logoUrls}
         />
       </LogosContext.Provider>
     </div>
