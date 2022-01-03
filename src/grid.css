@@ -9,7 +9,7 @@
 
 .grid-wrapper {
     width: var(--grid-wrapper-width);
-    background-color: grey;
+    /* background-color: grey; */
     margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@
     justify-content: center;
     height: var(--tile-md-height);
     width: var(--tile-md-width);
-    background-color: red;
+    /* background-color: red; */
     margin: 10px;
 }
 

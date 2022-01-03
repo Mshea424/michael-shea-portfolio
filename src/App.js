@@ -12,9 +12,9 @@ function App() {
       <AppDrawer/>
       <Header/>
       <div className="main">
-        <div className="section">
+          <div className="section-break"></div>
           <Skills/>
-        </div>
+          <div className="section-break"></div>
       </div>
       
     </div>
