@@ -3,7 +3,7 @@ import "./styles.css";
 
 export default function GridLogo(props) {
     return (
-        <div className="item-wrapper">
+        <div className="logo-wrapper">
             <img 
                 className='logo-img' 
                 src={props.imgUrl} alt="logo"
