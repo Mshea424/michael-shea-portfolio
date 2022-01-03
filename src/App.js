@@ -3,7 +3,7 @@ import Header from './components/header/index'
 import AppDrawer from './components/app-drawer/index'
 import ResponsiveGrid from './components/responsive-grid/index';
 
-import logos from './logos/logos'
+import logos from './logos'
 
 function App() {
   return (

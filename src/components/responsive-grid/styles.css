@@ -4,7 +4,7 @@
 
 .grid {
     width: var(--grid-width);
-    background-color: grey;
+    /* background-color: grey; */
     margin: 0 auto;
 }
 

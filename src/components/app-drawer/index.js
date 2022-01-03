@@ -8,8 +8,6 @@ export default function AppDrawer() {
     const toggleDrawerActive = () => setdrawerActive(!drawerActive);
     return (
         <div>
-            <div>{drawerActive ? 1 : 0}</div>
-            <button onClick={()=> setdrawerActive(!drawerActive)}>toggle state</button>
             <HamburgerButton 
                 drawerActive={drawerActive}
                 toggleDrawerActive={toggleDrawerActive}
