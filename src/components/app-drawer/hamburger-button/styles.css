@@ -16,12 +16,13 @@
 .button-shadow {
   position: fixed;
   display: block;
+  z-index: 1;
   top: -70px;
   left: -65px;
   height: 130px;
   width: 130px;
   border-radius: 60px;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: grey;
   cursor: pointer;
 }
 
@@ -32,7 +33,7 @@
     height: 130px;
     width: 130px;
     border-radius: 60px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: grey;
   }
 
   60% {
@@ -41,6 +42,7 @@
     height: var(--app-drawer-body-height);
     width: var(--app-drawer-body-width);
     border-radius: 0;
+    background-color: grey;
   }
   100% {
     top: 0;
@@ -62,12 +64,12 @@
         height: 130px;
         width: 130px;
         border-radius: 60px;
-        background-color: rgba(0, 0, 0, 0.25);
+        background-color: grey;
     }
 }
 
 .button-shadow.active {
-    background-color: transparent;
+    background-color: grey;
 }
 
 .shadow-activate {
