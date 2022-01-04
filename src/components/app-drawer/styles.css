@@ -1,6 +1,6 @@
 :root {
-    --app-drawer-body-width: 300px;
-    --app-drawer-body-height: 300px;
+    --app-drawer-body-width: clamp(0px, 100vw, 300px);
+    --app-drawer-body-height: 100vh;
 }
 
 /* MEDIA QUERIES (BOOTSRAP REFERNCE BREAKPOINTS) */

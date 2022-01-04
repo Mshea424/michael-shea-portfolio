@@ -1,3 +1,59 @@
+
+
+@keyframes drawer-activate {
+    0% {
+      left: 0;
+      opacity: 0;
+    }
+    75% {
+        left: 0;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes drawer-deactivate {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+    100% {
+        left: 0;
+        opacity: 0;
+    }
+}
+
+.drawer-body {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: calc( 0px - var(--app-drawer-body-width));
+    width: var(--app-drawer-body-width);
+    height: var(--app-drawer-body-height);
+    background-color: grey;
+}
+
+.drawer-body.active {
+    left: 0;
+}
+
+.drawer-activate {
+  animation: drawer-activate;
+  animation-duration: .75s;
+}
+
+.drawer-deactivate {
+    animation: drawer-deactivate;
+    animation-duration: .75s;
+}
+
+
+
+
 /* MEDIA QUERIES (BOOTSRAP REFERNCE BREAKPOINTS) */
 
 /* Small devices (landscape phones, 576px and up) */

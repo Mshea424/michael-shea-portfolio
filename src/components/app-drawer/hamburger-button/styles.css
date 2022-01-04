@@ -34,13 +34,21 @@
     border-radius: 60px;
     background-color: rgba(0, 0, 0, 0.25);
   }
+
+  60% {
+    top: 0;
+    left: 0;
+    height: var(--app-drawer-body-height);
+    width: var(--app-drawer-body-width);
+    border-radius: 0;
+  }
   100% {
     top: 0;
     left: 0;
     height: var(--app-drawer-body-height);
     width: var(--app-drawer-body-width);
     border-radius: 0;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: grey;
   }
 }
   @keyframes shadow-deactivate {
@@ -64,7 +72,7 @@
 
 .shadow-activate {
   animation: shadow-activate;
-  animation-duration: 0.75s;
+  animation-duration: 1.25s;
 }
 
 .shadow-deactivate {

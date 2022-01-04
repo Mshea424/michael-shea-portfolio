@@ -12,7 +12,7 @@ export default function AppDrawer() {
                 drawerActive={drawerActive}
                 toggleDrawerActive={toggleDrawerActive}
             />
-            {/* <DrawerBody drawerActive={drawerActive}/> */}
+            <DrawerBody drawerActive={drawerActive}/>
         </div>
     )
 }
