@@ -6,7 +6,9 @@ const logoUrls = [ 'images/html_logo.png',
         'images/git_github_logo.png',  
         'images/mongo_logo.png',
         'images/postgresql_logo.png',
-        'images/vscode_logo.png'
+        'images/vscode_logo.png',
+        'images/netlify_logo.png',
+        'images/heroku_logo.png'
     ];
 
 export default logoUrls
