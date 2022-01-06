@@ -36,7 +36,7 @@
     width: var(--app-drawer-body-width);
     height: var(--app-drawer-body-height);
     background-color: grey;
-    padding-top: 70px;
+    padding-top: 200px;
 }
 
 .drawer-body.active {
@@ -62,7 +62,7 @@
     height: 70px;
     cursor: pointer;
     color: white;
-    font-size: calc(var(--app-drawer-body-width) * 0.07);
+    font-size: clamp(25px, calc(var(--app-drawer-body-width) * 0.07), 30px);
     text-decoration: none;
 }
 
@@ -73,7 +73,11 @@
 /* MEDIA QUERIES (BOOTSRAP REFERNCE BREAKPOINTS) */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    .drawer-body {
+        padding-top: 70px;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {}
