@@ -1,6 +1,6 @@
 import './index.css'
 import '../../grid.css'
-import logoUrls from '../../logoUrls'
+import logoUrls from './logoUrls'
 
 export default function Skills() {
     return (
