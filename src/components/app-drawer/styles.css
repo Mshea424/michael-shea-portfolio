@@ -1,15 +1,23 @@
 :root {
-    --app-drawer-body-width: clamp(0px, 100vw, 300px);
+    --app-drawer-body-width: 100vw;
     --app-drawer-body-height: 100vh;
 }
 
 /* MEDIA QUERIES (BOOTSRAP REFERNCE BREAKPOINTS) */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    :root {
+        --app-drawer-body-width: 40vw;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    :root {
+        --app-drawer-body-width: 300px;
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {}
