@@ -4,7 +4,10 @@ import './section.css';
 import Header from './components/header/index'
 import AppDrawer from './components/app-drawer/index'
 
-import Skills from './components/skills/index'
+import About from './components/about';
+import Skills from './components/skills/index';
+import Projects from './components/projects';
+import Contact from './components/contact';
 
 function App() {
   return (
@@ -12,11 +15,14 @@ function App() {
       <AppDrawer/>
       <Header/>
       <div className="main">
+          <About/>
           <div className="section-break"></div>
           <Skills/>
           <div className="section-break"></div>
+          <Projects/>
+          <div className="section-break"></div>
+          <Contact/>
       </div>
-      
     </div>
   );
 }
