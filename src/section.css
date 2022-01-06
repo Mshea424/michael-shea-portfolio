@@ -23,8 +23,8 @@
 .section-subtitle {
     margin: 2vw 10vw;
     text-align: center;
-    font-size: clamp(10px, 2.5vw, 18px);
-    line-height: clamp(20px, 5vw, 36px);
+    font-size: clamp(18px, 2.5vw, 18px);
+    line-height: clamp(30px, 5vw, 36px);
 }
 
 /* MEDIA QUERIES (BOOTSRAP REFERNCE BREAKPOINTS) */
