@@ -23,6 +23,14 @@ function App() {
           <div className="section-break"></div>
           <Contact/>
       </div>
+      <div 
+        className="fade fade-top"
+        style={ { backgroundImage: 'url(images/bottom-fade.png)'} }
+      ></div>
+      <div 
+        className="fade fade-bottom"
+        style={ { backgroundImage: 'url(images/bottom-fade.png)'} }  
+      ></div>
     </div>
   );
 }
