@@ -11,8 +11,6 @@
 .project-wrapper {
     display: inline-flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     /* background-color: blue; */
     height: var(--project-height);
     width: var(--project-width);
@@ -25,11 +23,12 @@
     display: block;
     width: var(--project-img-width);
     height: var(--project-img-height);
-    /* background: red; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .project-desc {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,26 +55,19 @@
     :root {
         --project-split: 1;
         --project-height: calc(var(--project-width) * .5);
+        --project-img-width: calc(var(--project-width) * .5);
+        --project-desc-width: calc(var(--project-width) * .5);
+        --project-desc-height: var(--project-img-height);
     }
 
     .project-wrapper {
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-color: blue;
-        height: var(--project-height);
-        width: var(--project-width);
-        margin: 10px;
     }
 
-    .project-img {
-        display: block;
-
+    .reversed {
+        flex-direction: row-reverse;
     }
 
-    .project-desc {
-        
-    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */

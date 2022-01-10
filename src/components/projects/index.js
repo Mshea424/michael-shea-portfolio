@@ -23,7 +23,7 @@ export default function Projects() {
                     QBCart
                     </div>
                 </a>
-                <div className="project-wrapper">
+                <div className="project-wrapper reversed">
                     <div className="project-img">
                     
                     </div>
