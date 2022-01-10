@@ -1,41 +1,82 @@
 :root {
     --project-split: 1;
     --project-width: calc((var(--grid-wrapper-width) / var(--project-split)) - 20px);
-    --project-height: calc(var(--project-width) * 1.5);
-    --project-img-width: var(--project-width);
+    --project-height: calc(var(--project-width) * 1.6);
+    --project-background: grey;
+    --project-img-width: calc(var(--project-width) - 30px);
     --project-img-height: var(--project-img-width);
-    --project-desc-width: var(--project-width);
+    --project-desc-width: calc(var(--project-width) - clamp( 40px, 4, 100px));
     --project-desc-height: calc(var(--project-height) - var(--project-img-height));
+    --project-line-height: clamp( 20px, 2.5vw, 50px);
 }
 
 .project-wrapper {
     display: inline-flex;
     flex-direction: column;
-    /* background-color: blue; */
+    background-color: var(--project-background);
     height: var(--project-height);
     width: var(--project-width);
     margin: 10px;
     text-decoration: none;
     color: white;
+    border-radius: 5px;
 }
 
 .project-img {
     display: block;
     width: var(--project-img-width);
     height: var(--project-img-height);
+    margin: 15px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: hotpink;
 }
 
 .project-desc {
+    display: block;
+    width: var(--project-desc-width);
+    height: var(--project-desc-height);
+    padding: 0 clamp( 20px, 2vw, 50px);
+    text-align: center;
+}
+
+.project-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: var(--project-desc-width);
-    height: var(--project-desc-height);
-    /* background: green; */
+    height: clamp(40px, 6vw, 80px);
+    font-size: clamp(26px, 4vw, 40px);
 }
+
+.project-subtitle {
+    line-height: var(--project-line-height);
+}
+
+.truncate-overflow {
+    position: relative;
+    --max-lines: 3;
+    max-height: calc(var(--project-line-height) * var(--max-lines));
+    overflow: hidden;
+  }
+
+  .truncate-overflow::before {
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1rem;
+    background-color: var(--project-background);
+  }
+
+  .truncate-overflow::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1rem;
+    height: 2.2rem;
+    background-color: var(--project-background);
+  }
 
 /* MEDIA QUERIES (BOOTSRAP REFERNCE BREAKPOINTS) */
 
@@ -54,18 +95,25 @@
 @media (min-width: 992px) {
     :root {
         --project-split: 1;
-        --project-height: calc(var(--project-width) * .5);
-        --project-img-width: calc(var(--project-width) * .5);
+        --project-height: calc(var(--project-width) * .4);
+        --project-img-width: calc(var(--project-height) - 30px);
         --project-desc-width: calc(var(--project-width) * .5);
-        --project-desc-height: var(--project-img-height);
+        --project-desc-height: calc(var(--project-height));
+        --project-line-height: 50px;
     }
 
     .project-wrapper {
         flex-direction: row;
+        margin: 20px auto;
     }
 
     .reversed {
         flex-direction: row-reverse;
+    }
+
+    .project-desc {
+        padding: 0 50px; 
+        text-align: left;
     }
 
 }

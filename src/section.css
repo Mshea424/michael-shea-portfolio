@@ -18,14 +18,13 @@
 .section-title {
     text-align: center;
     font-size: clamp(30px, 5vw, 50px);
+    margin-bottom: 60px;
 }
 
 .section-subtitle {
     margin: 2vw auto;
     width: clamp(0px, 80vw, 1000px);
-    text-align: center;
-    font-size: clamp(18px, 2.5vw, 18px);
-    line-height: clamp(30px, 5vw, 36px);
+    text-align: center
 }
 
 /* MEDIA QUERIES (BOOTSRAP REFERNCE BREAKPOINTS) */
