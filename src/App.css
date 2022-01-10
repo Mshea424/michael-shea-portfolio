@@ -8,7 +8,7 @@ body {
 }
 
 .main {
-  margin-top: 175px;
+  margin-top: 150px;
   height: calc(100vh - 175px);
   width: 100vw;
   position: fixed;
