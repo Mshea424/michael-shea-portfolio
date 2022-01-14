@@ -55,7 +55,7 @@
 
 .truncate-overflow {
     position: relative;
-    --max-lines: 3;
+    --max-lines: 5;
     max-height: calc(var(--project-line-height) * var(--max-lines));
     overflow: hidden;
   }
