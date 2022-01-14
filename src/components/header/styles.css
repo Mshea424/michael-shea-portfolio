@@ -41,6 +41,7 @@
 /* Dynamic variables */
 :root {
     --header-text-size: 12vw;
+    --header-line-height: 14vw;
 }
 
 .header-wrapper {
@@ -109,6 +110,7 @@
 .header-text {
     display: none;
     font-size: var(--header-text-size);
+    line-height: var(--header-line-height);
     text-align: center;  
     color: white;
 }
@@ -125,6 +127,7 @@
 @media (min-width: 576px) {
     :root {
         --header-text-size: 50px;
+        --header-line-height: 60px;
     }
 }
 
