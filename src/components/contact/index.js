@@ -10,14 +10,24 @@ export default function Contact() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={ { backgroundImage: 'url(images/linkedin_link.png)'} }
-            ></a>
+            >Visit LinkedIn Profile</a>
             <a 
                 className="contact-link"
                 href="https://github.com/mshea424"
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={ { backgroundImage: 'url(images/github_link.png)'} }
-            ></a>
+            >Visit GitHub Profile</a>
+            <a 
+                className="contact-resume"
+                href="/downloads/michael-shea-resume.pdf" 
+                download="michael-shea-resume"
+            >
+                Download Resume
+                <span className="material-icons">
+                    file_download
+                </span>
+            </a>    
         </div>
     )
 }

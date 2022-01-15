@@ -1,9 +1,68 @@
+:root {
+    --contact-resume-width: 45vw;
+}
+
+
 .contact-link {
     display: block;
-    height: 2vw;
-    width: 8vw;
+    height: clamp(50px, 4vw, 75px);
+    width: clamp(200px, 16vw, 300px);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: green;
+    margin: 50px auto;
+    color: transparent;
 }
+
+.contact-resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(var(--contact-resume-width) * 0.2 );
+    width: var(--contact-resume-width);
+    margin: 50px auto;
+    color: white;
+    Text-decoration: none;
+    font-size: calc(var(--contact-resume-width) * 0.09 );
+    font-weight: 700;
+    background-color: grey;
+    border-radius: 8px;
+}
+
+.material-icons {
+    display: flex;
+    align-items: center;
+    font-size: calc(var(--contact-resume-width) * 0.09 );
+    margin-left: calc(var(--contact-resume-width) * 0.045 );
+    margin-top: calc(var(--contact-resume-width) * 0.03 );
+    color: white;
+}
+
+/* MEDIA QUERIES (BOOTSRAP REFERNCE BREAKPOINTS) */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    :root {
+        --contact-resume-width: 32vw;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    :root {
+        --contact-resume-width: 250px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    :root {
+        --contact-resume-width: 300px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
