@@ -5,13 +5,19 @@
 
 .contact-link {
     display: block;
-    height: clamp(50px, 4vw, 75px);
-    width: clamp(200px, 16vw, 300px);
+    height: clamp(50px, 4vw, 60px);
+    width: clamp(200px, 16vw, 250px);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     margin: 50px auto;
     color: transparent;
+    
+}
+
+.contact-link:hover {
+    background-color: grey;
+    border-radius: 8px;
 }
 
 .contact-resume {
@@ -25,6 +31,9 @@
     Text-decoration: none;
     font-size: calc(var(--contact-resume-width) * 0.09 );
     font-weight: 700;
+}
+
+.contact-resume:hover {
     background-color: grey;
     border-radius: 8px;
 }

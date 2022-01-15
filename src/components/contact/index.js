@@ -9,14 +9,14 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/michael-s-shea/"
                 target="_blank" 
                 rel="noopener noreferrer"
-                style={ { backgroundImage: 'url(images/linkedin_link.png)'} }
+                style={ { backgroundImage: 'url(images/linkedin_link_white.png)'} }
             >Visit LinkedIn Profile</a>
             <a 
                 className="contact-link"
                 href="https://github.com/mshea424"
                 target="_blank" 
                 rel="noopener noreferrer"
-                style={ { backgroundImage: 'url(images/github_link.png)'} }
+                style={ { backgroundImage: 'url(images/github_link_white.png)'} }
             >Visit GitHub Profile</a>
             <a 
                 className="contact-resume"
