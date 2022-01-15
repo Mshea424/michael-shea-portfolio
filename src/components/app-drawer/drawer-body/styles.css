@@ -29,6 +29,7 @@
 .drawer-body {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     z-index: 2;
     top: 0;
@@ -37,6 +38,7 @@
     height: var(--app-drawer-body-height);
     background-color: grey;
     padding-top: 200px;
+    padding-bottom: 100px;
 }
 
 .drawer-body.active {
@@ -68,6 +70,13 @@
 
 .drawer-nav:hover {
     background-color: rgb(150, 150, 150);
+}
+
+.social {
+    background-position: center;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    color: transparent;
 }
 
 /* MEDIA QUERIES (BOOTSRAP REFERNCE BREAKPOINTS) */

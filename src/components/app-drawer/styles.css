@@ -1,6 +1,6 @@
 :root {
     --app-drawer-body-width: 100vw;
-    --app-drawer-body-height: 100vh;
+    --app-drawer-body-height: calc(100vh - 250px);
 }
 
 /* MEDIA QUERIES (BOOTSRAP REFERNCE BREAKPOINTS) */

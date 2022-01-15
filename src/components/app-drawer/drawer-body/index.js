@@ -5,6 +5,7 @@ export default function DrawerBody(props) {
         <div 
             className={`drawer-body ${props.drawerActive ? "active drawer-activate" : "drawer-deactivate"}`}
         >
+            <div>
             <a 
                 href="#about" 
                 className='drawer-nav'
@@ -33,6 +34,34 @@ export default function DrawerBody(props) {
             >
                 Contact
             </a>
+            </div>
+            <div>
+            <a 
+                className="drawer-nav social"
+                href="https://www.linkedin.com/in/michael-s-shea/"
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={ { backgroundImage: 'url(images/linkedin_link_white.png)'} }
+            >Visit LinkedIn Profile</a>
+            <a 
+                className="drawer-nav social"
+                href="https://github.com/mshea424"
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={ { backgroundImage: 'url(images/github_link_white.png)'} }
+            >Visit GitHub Profile</a>
+            <a 
+                className="drawer-nav"
+                href="/downloads/michael-shea-resume.pdf" 
+                download="michael-shea-resume"
+            >
+                Download Resume
+                <span className="material-icons">
+                    file_download
+                </span>
+            </a>    
+            </div>
+            
         </div>
     )
 }
