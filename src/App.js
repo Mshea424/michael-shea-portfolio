@@ -25,11 +25,11 @@ function App() {
       </div>
       {/* <div 
         className="fade fade-top"
-        style={ { backgroundImage: 'url(images/lightseagreen-fade-top.png)'} }
+        style={ { backgroundImage: 'url(images/20B2AA.jpeg)'} }
       ></div>
       <div 
         className="fade fade-bottom"
-        style={ { backgroundImage: 'url(images/lightseagreen-fade-bottom.png)'} }  
+        style={ { backgroundImage: 'url(images/20B2AA-gradient-bottom.jpeg)'} }  
       ></div> */}
     </div>
   );
