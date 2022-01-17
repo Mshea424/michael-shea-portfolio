@@ -20,7 +20,7 @@ export default function Contact() {
             >Visit GitHub Profile</a>
             <a 
                 className="contact-resume"
-                href="/downloads/michael-shea-resume.pdf" 
+                href="/michael-shea-resume.pdf" 
                 download="michael-shea-resume"
             >
                 Download Resume
