@@ -21,7 +21,7 @@ export default function Contact() {
             <a 
                 className="contact-resume"
                 href="/downloads/michael-shea-resume.pdf" 
-                download="michael-shea-resume"
+                download
             >
                 Download Resume
                 <span className="material-icons">
