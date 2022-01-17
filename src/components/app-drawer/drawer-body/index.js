@@ -52,7 +52,7 @@ export default function DrawerBody(props) {
             >Visit GitHub Profile</a>
             <a 
                 className="drawer-nav"
-                href="/michael-shea-resume.pdf" 
+                href="/downloads/michael-shea-resume.pdf" 
                 download="michael-shea-resume"
             >
                 Download Resume
