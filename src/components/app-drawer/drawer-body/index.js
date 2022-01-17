@@ -54,7 +54,7 @@ export default function DrawerBody(props) {
             <a 
                 className="drawer-nav"
                 href={resume}
-                download
+                download="michael-shea-resume"
             >
                 Download Resume
                 <span className="material-icons">

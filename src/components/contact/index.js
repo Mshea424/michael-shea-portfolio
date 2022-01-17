@@ -22,7 +22,7 @@ export default function Contact() {
             <a 
                 className="contact-resume"
                 href={resume} 
-                download
+                download="michael-shea-resume"
             >
                 Download Resume
                 <span className="material-icons">
