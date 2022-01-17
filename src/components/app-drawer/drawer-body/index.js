@@ -1,4 +1,5 @@
 import "./styles.css";
+import resume from '../../../downloads/michael-shea-resume.pdf'
 
 export default function DrawerBody(props) {
     return (
@@ -52,7 +53,7 @@ export default function DrawerBody(props) {
             >Visit GitHub Profile</a>
             <a 
                 className="drawer-nav"
-                href="/downloads/michael-shea-resume.pdf" 
+                href={resume}
                 download
             >
                 Download Resume
