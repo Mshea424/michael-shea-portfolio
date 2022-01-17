@@ -9,6 +9,7 @@
 @media (min-width: 576px) {
     :root {
         --app-drawer-body-width: 40vw;
+        --app-drawer-body-height: calc(100vh - 150px);
     }
 }
 

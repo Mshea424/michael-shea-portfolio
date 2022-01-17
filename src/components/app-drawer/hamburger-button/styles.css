@@ -39,7 +39,7 @@
   60% {
     top: 0;
     left: 0;
-    height: var(--app-drawer-body-height);
+    height: calc(var(--app-drawer-body-height) + 250px);
     width: var(--app-drawer-body-width);
     border-radius: 0;
     background-color: grey;
