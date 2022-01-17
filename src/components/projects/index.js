@@ -31,8 +31,9 @@ export default function Projects() {
                     </div>
                 </div>
                 <div className="project-wrapper reversed">
-                    <div className="project-img">
-                    
+                    <div 
+                        className="project-img"
+                        style={ { backgroundImage: 'url(images/americonnect.png)'} }>
                     </div>
                     <div className="project-desc">
                     <div className="project-title">Americonnect</div>
@@ -43,7 +44,10 @@ export default function Projects() {
                     </div>
                 </div>
                 <div className="project-wrapper">
-                    <div className="project-img">
+                    <div 
+                        className="project-img"
+                        style={ { backgroundImage: 'url(images/clarity.png)'} }
+                    >
                     
                     </div>
                     <div className="project-desc">
@@ -55,8 +59,10 @@ export default function Projects() {
                     </div>
                 </div>
                 <div className="project-wrapper reversed">
-                    <div className="project-img">
-                    
+                    <div 
+                        className="project-img"
+                        style={ { backgroundImage: 'url(images/sunset-yards.png)'} }
+                    >
                     </div>
                     <div className="project-desc">
                     <div className="project-title">Sunset Yards</div>
